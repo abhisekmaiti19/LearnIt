@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login - Master</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="hero">
+        <div class="herotxt">
+          <h3>Hello! Master, You are Welcome!</h3>
+        </div>
+        <div class="hroimg"><img src="asset/master.png" alt="" /></div>
+      </div>
+      <div class="details">
+        <div class="choice">
+          <h3>Login</h3>
+          <div class="buttonsChoice">
+            <button
+              type="submit"
+              class="inactive"
+              onclick="location.href='login.html'"
+            >
+              Student
+            </button>
+            <button type="submit" class="active">Teacher</button>
+          </div>
+        </div>
+
+        <div class="inputDetails">
+          <input
+            type="email"
+            name="Eaddress"
+            placeholder="Email Address"
+            id="email"
+          />
+          <input
+            type="password"
+            name="Password"
+            placeholder="Password"
+            id="pw"
+          />
+        </div>
+        <div class="others">
+          <div class="remind">
+            <input type="checkbox" name="tnc" id="tnc" /><label
+              for="Remind me for later"
+              >Remind me for letter</label
+            >
+          </div>
+
+          <button type="submit" class="login-btn">Login</button>
+
+          <div class="signup">
+            <h6>Don't have a Account?</h6>
+            <a href="signup_tchr.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

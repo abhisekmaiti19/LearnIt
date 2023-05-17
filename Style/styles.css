@@ -1,0 +1,254 @@
+/* //adding margin 0 and padding o for html whole documnet because html document ahve own margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*nav section */
+/* this is for whole navbar styling, and adding flex on each element  */
+.navbar {
+  height: 100px;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  /* border: 1px solid black; */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(55, 9, 121, 1) 35%,
+    rgba(104, 0, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: flex-start; */
+  color: aliceblue;
+  font-family: Poppins;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+}
+
+/* this style for Home About Courses and button */
+.navItems {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.navItems li {
+  font-size: 17px;
+}
+.navItems a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.navbar .fi-br-menu-burger {
+  display: none;
+}
+
+.navButton {
+  height: 50px;
+  width: 120px;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: flex;
+}
+
+.navbar .fi-sr-user {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(104, 0, 255, 1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}
+
+.navbar .fi-sr-user:hover {
+  background-color: rgb(198, 183, 253);
+  color: rgb(37, 0, 105);
+}
+
+.navbar h2 {
+  padding-top: 20px;
+}
+
+.fi-sr-user {
+  display: flex;
+  gap: 10px;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+/* -----------------------Hero Section---------------------*/
+
+.hero {
+  width: 100%;
+  height: 920px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(55, 9, 121, 1) 35%,
+    rgba(104, 0, 255, 1) 100%
+  );
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero .txtHero {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  width: 40%;
+  margin-left: 120px;
+  padding: 50px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-size: 35px;
+  color: white;
+  font-family: Poppins;
+  /* background-color: brown; */
+}
+
+.hero .txtHero .button-explore {
+  font-size: 65%;
+  border: 2px solid white;
+  border-radius: 9px;
+  margin-top: 100px;
+  padding: 20px;
+  transition-duration: 300ms;
+  transition-delay: 5ms;
+}
+
+.hero .txtHero .button-explore:hover {
+  background-color: rgb(198, 183, 253);
+  color: rgb(37, 0, 105);
+}
+
+.hero .heroCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 120px;
+  margin-left: 250px;
+  height: 640px;
+  width: 60%;
+  padding: 80px;
+  /* background-color: brown; */
+  position: relative;
+}
+
+.heroDetails-bg {
+  width: 350px;
+  height: 80%;
+  opacity: 50%;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  border-radius: 20px;
+  position: absolute;
+  transform: rotate(-10deg);
+}
+.heroDetails-bg-bg {
+  width: 350px;
+  height: 80%;
+  opacity: 20%;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  border-radius: 20px;
+  position: absolute;
+  transform: rotate(-18deg);
+}
+
+.heroDetails-main {
+  width: 350px;
+  height: 80%;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  border-radius: 20px;
+  border: 2px solid black;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-bottom: 120px */
+}
+
+.heroDetails-main .heroDetailsText {
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  height: 10%;
+  width: 90%;
+  font-family: Poppins;
+  /* font-weight: extra-bold; */
+  /* border: rgb(2, 0, 36) solid 1px; */
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  border-radius: 10px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
+  padding: 20px;
+}
+
+.heroDetails-main .heroDetailsText h3 {
+  font-size: 25px;
+}
+
+.heroDetails-main .heroAuthor {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* border: 10px solid red; */
+}
+
+.heroDetails-main .heroAuthor .roundImage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 20px;
+  background-color: rgb(196, 145, 209);
+}
+
+.heroDetails-main .heroAuthor .roundImage img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 75px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px;
+  /* border: 1px solid black; */
+  /* padding: 45px; */
+  background-image: url(asset/Abhisek_Maiti.jpeg);
+}
+
+.heroDetails-main .heroAuthor .heroInfo {
+  font-family: Poppins;
+  color: rgb(86, 13, 104);
+}
